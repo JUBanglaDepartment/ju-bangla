@@ -1,0 +1,6 @@
+RewriteOptions inherit
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST}  \.
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

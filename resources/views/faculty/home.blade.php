@@ -1,1 +1,8 @@
-<h1>Faculty Home</h1>
+@extends('landing.layout')
+
+@section('content')
+
+    <h1>Faculty Home</h1>
+
+
+@endsection

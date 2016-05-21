@@ -56,7 +56,7 @@
             jssor_1_slider_init();
         </script>
     </div>
-
+    <div id="content_head"><span>Department of Bangla | বাংলা বিভাগ</span></div>
 @endsection
 
 
@@ -82,7 +82,7 @@
              <li class='has-sub'><a href='#'><span>বাংলায় পি,এইচ,ডি</span></a></li>
           </ul>
        </li>
-       <li><a href='#'><span>শিক্ষকবৃন্দ</span></a></li>
+       <li><a href='faculty'><span>শিক্ষকবৃন্দ</span></a></li>
        <li><a href='#'><span>যোগাযোগ</span></a></li>
        @if (Auth::guest())
            <li><a href="{{ url('/login') }}">লগ ইন</a></li>

@@ -10,10 +10,10 @@
 		<div class="header"></div>
 
             @yield('header')
-            
+
             @yield('banner')
 
-        <div id="content_head"><span>Department of Bangla | বাংলা বিভাগ</span></div>
+        
 
         <div id="content">
 
