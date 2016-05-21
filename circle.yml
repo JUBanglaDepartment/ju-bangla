@@ -1,7 +1,7 @@
 ## Customize the test machine
 machine:
     php:
-      version: 5.4.21
+      version: 5.5.11
 dependencies:
     pre:
-      - echo "memory_limit = 1024M" > ~/.phpenv/versions/5.4.21/etc/conf.d/memory.ini
+      - echo "memory_limit = 1024M" > ~/.phpenv/versions/5.5.11/etc/conf.d/memory.ini
