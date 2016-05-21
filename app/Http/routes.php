@@ -12,9 +12,15 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('landing.home');
 });
 
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
+
+Route::get('/student', 'StudentController@index');
+Route::get('/student/{id}', 'StudentController@show');
+
+Route::get('/faculty', 'FacultyController@index');
+Route::get('/faculty{id}', 'FacultyController@show');
