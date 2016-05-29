@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Department of Bangla</title>
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <div class="main_content">
@@ -13,7 +13,7 @@
 
             @yield('banner')
 
-        
+
 
         <div id="content">
 

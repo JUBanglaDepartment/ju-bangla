@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 
+use DB;
+use App\Models\Faculty;
 use App\Http\Requests;
+use Illuminate\Http\Request;
 
 class FacultyController extends Controller
 {
@@ -15,7 +17,11 @@ class FacultyController extends Controller
      */
     public function index()
     {
-        return view('faculty.home');
+        //$faculties = DB::table('faculties')->get();
+
+        $faculties = Faculty::all();
+        //return view('faculty.home', compact('faculties'));
+        return view('landing.devlayout', compact('faculties', 'rows'));
     }
 
     /**
@@ -35,9 +41,13 @@ class FacultyController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Faculty $faculty)
     {
-        //
+        return view('faculty.profile', compact('faculty'));
+
+        //return $faculty;
+        //return DB::table('faculties')->where('id',$id)->get();
+        //return view('landing.devlayout');
     }
 
     /**

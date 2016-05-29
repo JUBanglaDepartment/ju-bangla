@@ -5,3 +5,5 @@ Homestead.yaml
 Homestead.json
 .env
 .env-nogit
+test.php
+.git-ftp-tmp
