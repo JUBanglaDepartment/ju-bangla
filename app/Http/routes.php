@@ -24,3 +24,6 @@ Route::get('/student/{id}', 'StudentController@show');
 
 Route::get('/faculty', 'FacultyController@index');
 Route::get('/faculty/{faculty}', 'FacultyController@show');
+Route::get('/faculty/{faculty}/course', 'FacultyController@course');
+
+Route::get('/course', 'CourseController@showUGCourses');

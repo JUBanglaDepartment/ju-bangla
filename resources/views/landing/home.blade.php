@@ -1,21 +1,5 @@
 @extends('landing.layout')
 
-@section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-            <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
-
-                <div class="panel-body">
-                    You are logged in!
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-@endsection
-
 
 @section('banner')
     <div id="banner">
@@ -64,7 +48,7 @@
     <div id='cssmenu'>
     <ul>
        <li><a href='#'><span>বাংলা বিভাগ</span></a></li>
-       <li class='active has-sub'><a href='#'><span>প্রোগ্রাম সমূহ</span></a>
+       <li class='active has-sub'><a href='/course'><span>প্রোগ্রাম সমূহ</span></a>
           <ul>
              <li class='has-sub'><a href='#'><span>বাংলায় অনার্স</span></a>
                 <ul>

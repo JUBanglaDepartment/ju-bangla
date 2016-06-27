@@ -3,12 +3,11 @@
 namespace App\Http\Controllers;
 
 
-use DB;
-use App\Models\Faculty;
+use App\Models\Course;
 use App\Http\Requests;
 use Illuminate\Http\Request;
 
-class FacultyController extends Controller
+class CourseController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,12 +16,7 @@ class FacultyController extends Controller
      */
     public function index()
     {
-        //$faculties = DB::table('faculties')->get();
-
-        $faculties = Faculty::all();
-        //return view('faculty.home', compact('faculties'));
-        //return view('landing.devlayout', compact('faculties', 'rows'));
-        return view('faculty.home', compact('faculties', 'rows'));
+        //
     }
 
     /**
@@ -35,36 +29,26 @@ class FacultyController extends Controller
         //
     }
 
-
     /**
-     * Display the specified resource.
+     * Store a newly created resource in storage.
      *
-     * @param  int  $id
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function show(Faculty $faculty)
+    public function store(Request $request)
     {
-        return view('faculty.profile', compact('faculty'));
-
-        //return $faculty;
-        //return DB::table('faculties')->where('id',$id)->get();
-        //return view('landing.devlayout');
+        //
     }
 
-    
     /**
      * Display the specified resource.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function course()
+    public function show($id)
     {
-        return view('faculty.course');
-
-        //return $faculty;
-        //return DB::table('faculties')->where('id',$id)->get();
-        //return view('landing.devlayout');
+        //
     }
 
     /**
@@ -99,5 +83,10 @@ class FacultyController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function showUGCourses() {
+        $courses = Course::all();
+        return view('course.home', compact('courses'));
     }
 }

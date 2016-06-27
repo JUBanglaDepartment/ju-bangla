@@ -1,5 +1,5 @@
 body {
-	background-color: #FFF;	
+	background-color: #FFF;
 }
 
 .main_content {
@@ -29,19 +29,19 @@ body {
   border: 0;
   width: auto;
 }
-  
+
 #cssmenu ul,
 #cssmenu ul li,
 #cssmenu ul ul {
   list-style: none;
   margin: 0;
-  
+
   padding: 0;
 }
 #cssmenu ul {
   position: relative;
   z-index: 597;
-  float: left; 
+  float: left;
 }
 #cssmenu ul li {
   float: left;
@@ -296,7 +296,7 @@ body {
 }
 
 #content {
-	height:270px;
+	/**height:270px;*/
 	width:auto;
 }
 
@@ -315,4 +315,9 @@ body {
   height:125px;
   margin-top:10px;
   width: 100%;
+  bottom: 0;
+}
+.courses {
+	width: 80%;
+	margin: 0 auto;
 }
