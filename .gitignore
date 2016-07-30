@@ -7,3 +7,4 @@ Homestead.json
 .env-nogit
 test.php
 .git-ftp-tmp
+DB_entries.php
