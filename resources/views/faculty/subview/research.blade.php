@@ -1,4 +1,4 @@
-<div role="tabpanel" class="tab-pane fade active" id="research">
+<div role="tabpanel" class="tab-pane fade" id="research">
     <h3 class="page-header">Research</h3>
     <div class="row">
         <div class="col-md-12">
