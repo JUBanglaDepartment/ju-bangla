@@ -8,7 +8,21 @@
 <div id="content_head"><div id="content_head_text"><span>Department of Bangla | বাংলা বিভাগ</span></div></div>
 @endsection
 
+@section('header')
+    <div id="header">
+        <div id="header_content">
+            <div id="header_logo"></div>
+            <div id="header_text">
+                <div id="header_text2"><span>“ মনুষ্যত্বের শিক্ষাটাই চরম শিক্ষা আর সমস্তই তার অধীন ”</span></div>
+                <div id="header_text3"><span>-রবীন্দ্রনাথ ঠাকুর</span></div>
+            </div>
+        </div>
+    </div>
+@endsection
 
+@section('menu')
+    @include('landing.subview.menu')
+@endsection
 
 
 @section('banner')
