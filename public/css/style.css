@@ -7,7 +7,7 @@ body {
 
 #main_content {
 	width:auto;
-	min-height:780px;
+	min-height:1080px;
 	height:auto;
 	margin:0px auto;
 	background:url(../images/texture-21.png) repeat;
@@ -344,7 +344,7 @@ body {
 }
 
 #content_div {
-	min-height:270px;
+	min-height:570px;
 	height: auto;
 	width:auto;
 	margin:auto;
@@ -355,7 +355,7 @@ body {
 	background-color: #FFFFFF;
 	opacity: 0.9;
 	height: auto;
-	min-height:265px;
+	min-height:565px;
 	margin:auto;
 	margin-top:10px;
 }
