@@ -27,3 +27,6 @@ Route::get('/faculty/{faculty}', 'FacultyController@show');
 Route::get('/faculty/{faculty}/course', 'FacultyController@course');
 
 Route::get('/course', 'CourseController@showUGCourses');
+
+
+Route::get('/faculty/{faculty}/research', 'FacultyController@research');

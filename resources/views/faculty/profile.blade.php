@@ -57,27 +57,15 @@
                     </ul> --}}
                 </div>
 
-
-
-
-
-
-
                 <div class="col-sm-10 col-md-9">
                     <div class="tab-content">
 
                         @include('faculty.subview.home')
-
                         @include('faculty.subview.research')
-
                         @include('faculty.subview.notice')
-
                         @include('faculty.subview.research_papers')
-
                         @include('faculty.subview.publications')
-
                         @include('faculty.subview.affiliations')
-
                         @include('faculty.subview.contact')
 
                     </div>

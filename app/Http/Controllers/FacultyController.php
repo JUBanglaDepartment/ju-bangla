@@ -51,7 +51,7 @@ class FacultyController extends Controller
         //return view('landing.devlayout');
     }
 
-    
+
     /**
      * Display the specified resource.
      *
@@ -61,6 +61,21 @@ class FacultyController extends Controller
     public function course()
     {
         return view('faculty.course');
+
+        //return $faculty;
+        //return DB::table('faculties')->where('id',$id)->get();
+        //return view('landing.devlayout');
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function research()
+    {
+        return view('faculty.subview.research');
 
         //return $faculty;
         //return DB::table('faculties')->where('id',$id)->get();
