@@ -42,10 +42,10 @@
                         <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-home" aria-hidden="true"></i>  {{ trans('profile.home') }}<span class="sr-only">(current)</span></a></li>
                         <li role="presentation"><a href="#research" aria-controls="research" role="tab" data-toggle="tab"><i class="fa fa-book" aria-hidden="true"></i>  {{ trans('profile.research') }}</a></li>
                         <li role="presentation"><a href="#notice" aria-controls="notice" role="tab" data-toggle="tab"><i class="fa fa-bell" aria-hidden="true"></i>  {{ trans('profile.notice') }}</a></li>
-                        <li role="presentation"><a href="#research_papers" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-book" aria-hidden="true"></i>  {{ trans('profile.research_papers') }}</a></li>
-                        <li role="presentation"><a href="#publications" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-book" aria-hidden="true"></i> {{ trans('profile.publications') }}</a></li>
-                        <li role="presentation"><a href="#affiliations" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-houzz" aria-hidden="true"></i>  {{ trans('profile.affiliations') }}</a></li>
-                        <li role="presentation"><a href="#contact" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-phone-square" aria-hidden="true"></i>  {{ trans('profile.contact_information') }}</a></li>
+                        <li role="presentation"><a href="#research_papers" aria-controls="research_papers" role="tab" data-toggle="tab"><i class="fa fa-book" aria-hidden="true"></i>  {{ trans('profile.research_papers') }}</a></li>
+                        <li role="presentation"><a href="#publications" aria-controls="publications" role="tab" data-toggle="tab"><i class="fa fa-book" aria-hidden="true"></i> {{ trans('profile.publications') }}</a></li>
+                        <li role="presentation"><a href="#affiliations" aria-controls="affiliations" role="tab" data-toggle="tab"><i class="fa fa-houzz" aria-hidden="true"></i>  {{ trans('profile.affiliations') }}</a></li>
+                        <li role="presentation"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab"><i class="fa fa-phone-square" aria-hidden="true"></i>  {{ trans('profile.contact_information') }}</a></li>
                     </ul>
                     {{-- <ul class="nav nav-sidebar">
                         <li role="presentation"><a href="#research_papers" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-book" aria-hidden="true"></i>  {{ trans('profile.research_papers') }}</a></li>

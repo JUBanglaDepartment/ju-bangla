@@ -51,7 +51,7 @@ class FacultyController extends Controller
         //return view('landing.devlayout');
     }
 
-    
+
     /**
      * Display the specified resource.
      *
@@ -59,7 +59,7 @@ class FacultyController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function course()
-    {
+    {   
         return view('faculty.course');
 
         //return $faculty;
