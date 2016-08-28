@@ -24,5 +24,15 @@ return [
     '7' => '7',
     '8' => '8',
     '9' => '9',
+    'first' => 'first',
+    'second' => 'second',
+    'third' => 'third',
+    'fourth' => 'fourth',
+    'fifth' => 'fifth',
+    'sixth' => 'sixth',
+    'seventh' => 'seventh',
+    'eighth' => 'eighth',
+    'ninth' => 'ninth',
+    'tenth' => 'tenth',
 
 ];

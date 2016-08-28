@@ -12,10 +12,9 @@
     <div id="content">
         <div class="container">
             <div class="row">
-              <div class="col-md-12">
-                  <p>Please contact through the following phone numers.</p>
-                  <p>You can also mail us to the provided email address.</p>
-              </div>
+                <h3 class="header"> Contact Information</h3>
+                    Please contact through the following phone numers.
+                    You can also mail us to the provided email address.
             </div>
         </div>
     </div>

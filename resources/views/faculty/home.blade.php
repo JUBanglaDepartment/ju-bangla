@@ -2,6 +2,7 @@
 
 @section('css')
     <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <link href="/css/sidebar.css" rel="stylesheet">
 @endsection
 
 @section('content_header')
@@ -28,7 +29,32 @@
 @section('banner')
 
 @endsection
+
 @section('content_body')
+    <div id="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-2 col-md-3 sidebar">
+                    <ul class="nav nav-sidebar">
+                        <li role="presentation" class="active"><a href="#faculty" aria-controls="faculty" role="tab" data-toggle="tab">
+                            Faculty <span class="sr-only">(current)</span>
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-10 col-md-9">
+                    <div class="tab-content">
+
+                        @include('faculty.subview.faculty')
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+@endsection
+
+
+@section('_content_body')
     <div id="content">
         <div class="container">
             <div class="row">
