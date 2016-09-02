@@ -7,7 +7,6 @@
 @endsection
 
 @section('content_header')
-<div id="content_head"><div id="content_head_text"><span>Department of Bangla | বাংলা বিভাগ</span></div></div>
 @endsection
 
 @section('header')

@@ -27,7 +27,7 @@
 
 
 @section('banner')
-
+    @include('landing.subview.banner')
 @endsection
 
 @section('content_body')
