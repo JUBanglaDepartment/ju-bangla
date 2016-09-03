@@ -2,7 +2,7 @@
     <h2 class="page-header">{{$faculty->name}}</h2>
     <div class="row">
         <div class="col-md-3">
-            <img src="/images/200x200.png" alt="Picture of {{$faculty->name}}" class="img-thumbnail"/>
+            <img src="/images/faculty/{{ $faculty->id }}.jpg" alt="Picture of {{$faculty->name}}" class="img-thumbnail"/>
         </div>
         <div class="col-md-9">
             <h5 class="sub-header"><i class="fa fa-envelope"></i>  {{$faculty->email}}</h5>
@@ -28,19 +28,10 @@
             </p>
         </div>
     </div>
-    <h3 class="page-header">Current Courses</h3>
+    <h3 class="page-header">Qualifications</h3>
     <div class="row">
         <div class="col-md-12">
-            <ul class="list-unstyled">
-                <li>Bengali Literature</li>
-                <li>Theory of Literary Forms</li>
-                <li>Bengali Literature</li>
-                <li>Theory of Literary Forms</li>
-                <li>Bengali Literature</li>
-                <li>Theory of Literary Forms</li>
-                <li>Bengali Literature</li>
-                <li>Theory of Literary Forms</li>
-            </ul>
+
         </div>
     </div>
 </div>

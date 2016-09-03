@@ -61,7 +61,7 @@
                 @foreach ($faculties as $faculty)
                     <div class="col-md-4">
                       <h4>{{ $faculty->name }}</h4>
-                      <img class="img-circle profile-pic" src="/images/200x200.png" alt="Generic placeholder image" height="140" width="140">
+                      <img class="img-circle profile-pic" src="/images/faculty/{{ $faculty->id }}.png" alt="Generic placeholder image" height="140" width="140">
                       <p> Email: {{ $faculty->email }}</p>
                       <p> Phone: {{ $faculty->phone }}</p>
                       <p><a class="btn btn-default" href="faculty/{{ $faculty->id }}" role="button">View details &raquo;</a></p>
@@ -77,7 +77,7 @@
         @foreach ($faculties as $faculty)
             <div class="col-md-4">
               <h2>{{ $faculty->name }}</h2>
-              <img class="img-circle profile-pic" src="/images/profile-140-140.jpg" alt="Generic placeholder image" height="140" width="140">
+              <img class="img-circle profile-pic" src="/images/faculty/{{ $faculty->id }}.png" alt="Generic placeholder image" height="140" width="140">
               <p> Email: {{ $faculty->email }}</p>
               <p> Phone: {{ $faculty->phone }}</p>
               <p><a class="btn btn-default" href="faculty/{{ $faculty->id }}" role="button">View details &raquo;</a></p>
