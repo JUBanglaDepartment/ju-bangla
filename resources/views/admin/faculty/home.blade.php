@@ -123,7 +123,7 @@
         <div class="col-lg-12 col-md-12">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title"><i class="fa fa-money fa-fw"></i> Transactions Panel</h3>
+                    <h3 class="panel-title"><i class="fa fa-money fa-fw"></i> Students' Score</h3>
                 </div>
                 <div class="panel-body">
                     <div class="table-responsive">
