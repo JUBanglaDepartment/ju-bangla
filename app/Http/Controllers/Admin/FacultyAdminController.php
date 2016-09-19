@@ -16,7 +16,7 @@ class FacultyAdminController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.faculty.home');
     }
 
     /**

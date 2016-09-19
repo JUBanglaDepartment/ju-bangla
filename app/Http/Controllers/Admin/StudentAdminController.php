@@ -16,7 +16,7 @@ class StudentAdminController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.student.home');
     }
 
     /**
