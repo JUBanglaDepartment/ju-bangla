@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Models\Course;
+use Illuminate\Http\Request;
+
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-class CourseAdminController extends Controller
+class SystemAdminController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +16,7 @@ class CourseAdminController extends Controller
      */
     public function index()
     {
-        return view('admin.course.home');
+        return view('admin.system.home');
     }
 
     /**
