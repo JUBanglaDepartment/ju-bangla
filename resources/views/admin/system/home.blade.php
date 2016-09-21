@@ -1,7 +1,7 @@
 @extends('admin.layout')
 
 @section('navigation_content')
-    @include('admin.subview.navigation', ['active' => 'system'])
+    @include('admin.system.navigation')
 @endsection
 
 @section('body_content')
@@ -120,149 +120,56 @@
     </div>
     <!-- /.row -->
     <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-9 col-md-12">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> Area Chart</h3>
+                    <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> Create Faculty</h3>
                 </div>
                 <div class="panel-body">
-                    <div id="morris-area-chart"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /.row -->
-    <div class="row">
-        <div class="col-lg-4">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title"><i class="fa fa-long-arrow-right fa-fw"></i> Donut Chart</h3>
-                </div>
-                <div class="panel-body">
-                    <div id="morris-donut-chart"></div>
-                    <div class="text-right">
-                        <a href="#">View Details <i class="fa fa-arrow-circle-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title"><i class="fa fa-clock-o fa-fw"></i> Tasks Panel</h3>
-                </div>
-                <div class="panel-body">
-                    <div class="list-group">
-                        <a href="#" class="list-group-item">
-                            <span class="badge">just now</span>
-                            <i class="fa fa-fw fa-calendar"></i> Calendar updated
-                        </a>
-                        <a href="#" class="list-group-item">
-                            <span class="badge">4 minutes ago</span>
-                            <i class="fa fa-fw fa-comment"></i> Commented on a post
-                        </a>
-                        <a href="#" class="list-group-item">
-                            <span class="badge">23 minutes ago</span>
-                            <i class="fa fa-fw fa-truck"></i> Order 392 shipped
-                        </a>
-                        <a href="#" class="list-group-item">
-                            <span class="badge">46 minutes ago</span>
-                            <i class="fa fa-fw fa-money"></i> Invoice 653 has been paid
-                        </a>
-                        <a href="#" class="list-group-item">
-                            <span class="badge">1 hour ago</span>
-                            <i class="fa fa-fw fa-user"></i> A new user has been added
-                        </a>
-                        <a href="#" class="list-group-item">
-                            <span class="badge">2 hours ago</span>
-                            <i class="fa fa-fw fa-check"></i> Completed task: "pick up dry cleaning"
-                        </a>
-                        <a href="#" class="list-group-item">
-                            <span class="badge">yesterday</span>
-                            <i class="fa fa-fw fa-globe"></i> Saved the world
-                        </a>
-                        <a href="#" class="list-group-item">
-                            <span class="badge">two days ago</span>
-                            <i class="fa fa-fw fa-check"></i> Completed task: "fix error on sales page"
-                        </a>
-                    </div>
-                    <div class="text-right">
-                        <a href="#">View All Activity <i class="fa fa-arrow-circle-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title"><i class="fa fa-money fa-fw"></i> Transactions Panel</h3>
-                </div>
-                <div class="panel-body">
-                    <div class="table-responsive">
-                        <table class="table table-bordered table-hover table-striped">
+                    <form class="" role="form" action="index.html" method="post">
+
+                        <div class="form-group">
+                          <label for="faculty_name">Faculty Name</label>
+                          <input type="text" name="faculty_name" class="form-control" id="faculty_name" placeholder="faculty name">
+                        </div>
+
+                        <div class="form-group">
+                          <label for="faculty_email">Email Address</label>
+                          <input type="text" name="faculty_email" class="form-control" id="faculty_email" placeholder="email address">
+                          <p class="help-block">Enter faculty email address. This will be used as the username.</p>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="faculty_phone">Phone Number</label>
+                          <input type="text" name="faculty_phone" class="form-control" id="faculty_phone" placeholder="phone number">
+                        </div>
+
+                        <div class="form-group">
+                          <label for="faculty_fb">Facebook</label>
+                          <input type="text" name="faculty_fb" class="form-control" id="faculty_fb" placeholder="facebook link">
+                        </div>
+
+                        <div class="form-group">
+                          <p class="help-block">Please enter some lines about the faculty.</p>
+                          <textarea name="faculty_bio" id="faculty_bio" rows="5" cols="50"></textarea>
+                        </div>
+
+                        <table class="table table-bordered table-hover table-responsive">
                             <thead>
-                                <tr>
-                                    <th>Order #</th>
-                                    <th>Order Date</th>
-                                    <th>Order Time</th>
-                                    <th>Amount (USD)</th>
-                                </tr>
+                                <th>
+                                    <td>Institute</td><td>Degree</td>
+                                </th>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>3326</td>
-                                    <td>10/21/2013</td>
-                                    <td>3:29 PM</td>
-                                    <td>$321.33</td>
-                                </tr>
-                                <tr>
-                                    <td>3325</td>
-                                    <td>10/21/2013</td>
-                                    <td>3:20 PM</td>
-                                    <td>$234.34</td>
-                                </tr>
-                                <tr>
-                                    <td>3324</td>
-                                    <td>10/21/2013</td>
-                                    <td>3:03 PM</td>
-                                    <td>$724.17</td>
-                                </tr>
-                                <tr>
-                                    <td>3323</td>
-                                    <td>10/21/2013</td>
-                                    <td>3:00 PM</td>
-                                    <td>$23.71</td>
-                                </tr>
-                                <tr>
-                                    <td>3322</td>
-                                    <td>10/21/2013</td>
-                                    <td>2:49 PM</td>
-                                    <td>$8345.23</td>
-                                </tr>
-                                <tr>
-                                    <td>3321</td>
-                                    <td>10/21/2013</td>
-                                    <td>2:23 PM</td>
-                                    <td>$245.12</td>
-                                </tr>
-                                <tr>
-                                    <td>3320</td>
-                                    <td>10/21/2013</td>
-                                    <td>2:15 PM</td>
-                                    <td>$5663.54</td>
-                                </tr>
-                                <tr>
-                                    <td>3319</td>
-                                    <td>10/21/2013</td>
-                                    <td>2:13 PM</td>
-                                    <td>$943.45</td>
+                                    <td>JU</td><td>MA in Bengali Literature</td>
+                                    <td>DU</td><td>BA in Bangle</td>
                                 </tr>
                             </tbody>
                         </table>
-                    </div>
-                    <div class="text-right">
-                        <a href="#">View All Transactions <i class="fa fa-arrow-circle-right"></i></a>
-                    </div>
+
+
+                    </form>
                 </div>
             </div>
         </div>

@@ -22,6 +22,7 @@
             </li>
             <li><a href='/faculty'><span>শিক্ষকবৃন্দ</span></a></li>
             <li><a href='/contact'><span>যোগাযোগ</span></a></li>
+            <li><a href='/admin/system'><span>সিস্টেম অ্যাডমিন</span></a></li>
             <li class='last'><a href='/login'><span>লগ ইন</span></a></li>
         </ul>
     </div>

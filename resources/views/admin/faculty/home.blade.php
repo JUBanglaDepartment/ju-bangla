@@ -1,7 +1,7 @@
 @extends('admin.layout')
 
 @section('navigation_content')
-    @include('admin.subview.navigation', ['active' => 'faculty'])
+    @include('admin.faculty.navigation')
 @endsection
 
 @section('body_content')
