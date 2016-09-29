@@ -120,14 +120,14 @@
     </div>
     <!-- /.row -->
     <div class="row">
-        <div class="col-lg-9 col-md-12">
+        <div class="col-lg-6 col-md-12">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> Create Faculty</h3>
                 </div>
                 <div class="panel-body">
-                    <form class="" role="form" action="index.html" method="post">
-
+                    <form class="" role="form" action="system/createFaculty" method="post">
+                        {{ csrf_field() }}
                         <div class="form-group">
                           <label for="faculty_name">Faculty Name</label>
                           <input type="text" name="faculty_name" class="form-control" id="faculty_name" placeholder="faculty name">
@@ -154,21 +154,36 @@
                           <textarea name="faculty_bio" id="faculty_bio" rows="5" cols="50"></textarea>
                         </div>
 
-                        <table class="table table-bordered table-hover table-responsive">
-                            <thead>
-                                <th>
-                                    <td>Institute</td><td>Degree</td>
-                                </th>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>JU</td><td>MA in Bengali Literature</td>
-                                    <td>DU</td><td>BA in Bangle</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-
+                        <div class="form-group">
+                          <p class="help-block">Please enter academic details of the faculty.</p>
+                          <table class="table table-7 table-hover table-responsive">
+                              <thead>
+                                  <tr>
+                                      <th>Sl</th><th>Degree</th><th>Institute</th><th>Subject</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                              @for ($i = 0; $i < 6; $i++)
+                                  <tr>
+                                      <td>{{$i+1}}</td>
+                                      <td><input type="text" name="faculty_degree_{{1}}" class="form-control"></td>
+                                      <td><input type="text" name="faculty_institute_{{1}}" class="form-control"></td>
+                                      <td><input type="text" name="faculty_subject_{{1}}" class="form-control"></td>
+                                  </tr>
+                              @endfor
+                              </tbody>
+                          </table>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6">
+                                    <input type="reset" class="form-control" value="Reset">
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <input type="submit" class="form-control" value="Submit">
+                                </div>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>

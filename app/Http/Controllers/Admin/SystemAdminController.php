@@ -24,9 +24,9 @@ class SystemAdminController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function createFaculty()
     {
-        //
+        echo "createFaculty";
     }
 
     /**

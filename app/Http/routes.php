@@ -34,4 +34,7 @@ Route::get('/admin', 'Admin\SystemAdminController@index');
 Route::get('/admin/faculty', 'Admin\FacultyAdminController@index');
 Route::get('/admin/student', 'Admin\StudentAdminController@index');
 Route::get('/admin/course', 'Admin\CourseAdminController@index');
+
+
 Route::get('/admin/system', 'Admin\SystemAdminController@index');
+Route::post('/admin/system/createFaculty', 'Admin\SystemAdminController@createFaculty');
