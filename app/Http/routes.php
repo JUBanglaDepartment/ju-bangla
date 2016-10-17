@@ -38,3 +38,5 @@ Route::get('/admin/course', 'Admin\CourseAdminController@index');
 
 Route::get('/admin/system', 'Admin\SystemAdminController@index');
 Route::post('/admin/system/createFaculty', 'Admin\SystemAdminController@createFaculty');
+Route::post('/admin/system/createStudent', 'Admin\SystemAdminController@createStudent');
+Route::post('/admin/system/createcourse', 'Admin\SystemAdminController@createcourse');

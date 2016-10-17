@@ -16,11 +16,8 @@ class CreateCoursesTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->text('objective');
+            $table->text('description');
             $table->string('code')->unique();
-            $table->string('courseNo');
-            $table->integer('attendance');
-            $table->integer('exercise');
-            $table->integer('final');
             $table->softDeletes();
             $table->timestamps();
         });
