@@ -153,50 +153,35 @@
                                 <tr>
                                     <td>1199</td>
                                     <td>John Smith Rickey</td>
-                                    <td>6</td>
-                                    <td>15</td>
-                                    <td>19</td>
-                                    <td>8</td>
-                                    <td>17</td>
-                                    <td>17</td>
-                                    <td>13</td>
-                                    <td>90%</td>
-                                    <td>9</td>
-                                    <td>28</td>
-                                </tr>
-                                <tr>
-                                    <td>1199</td>
-                                    <td>John Smith Rickey</td>
-                                    <td>6</td>
-                                    <td>15</td>
-                                    <td>19</td>
-                                    <td>8</td>
-                                    <td>17</td>
-                                    <td>17</td>
-                                    <td>13</td>
-                                    <td>90%</td>
-                                    <td>9</td>
-                                    <td>28</td>
-                                </tr>
-                                <tr>
-                                    <td>1199</td>
-                                    <td>John Smith Rickey</td>
-                                    <td>6</td>
-                                    <td>15</td>
-                                    <td>19</td>
-                                    <td>8</td>
-                                    <td>17</td>
-                                    <td>17</td>
-                                    <td>13</td>
-                                    <td>90%</td>
-                                    <td>9</td>
-                                    <td>28</td>
+                                    <td><input type="number" min="0" max="20" name="1199_tut_1"></td>
+                                    <td><input type="number" min="0" max="20" name="1199_tut_2"></td>
+                                    <td><input type="number" min="0" max="20" name="1199_tut_3"></td>
+                                    <td><input type="number" min="0" max="20" name="1199_tut_4"></td>
+                                    <td><input type="number" min="0" max="20" name="1199_tut_5"></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination">
+                            <li>
+                                <a href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo; Previous</span>
+                                </a>
+                                <a href="#" aria-label="Next">
+                                    <span aria-hidden="true">Next &raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
                     <div class="text-right">
-                        <a href="#">View All Transactions <i class="fa fa-arrow-circle-right"></i></a>
+                        <button type="button" class="btn btn-primary" name="button">Save</button>
                     </div>
                 </div>
             </div>
