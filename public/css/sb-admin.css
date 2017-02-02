@@ -225,3 +225,12 @@ ul.alert-dropdown {
 .panel-yellow > a:hover {
     color: #df8a13;
 }
+
+
+
+
+
+
+.table  tbody  td  input {
+    width: 80px;
+}

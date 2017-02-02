@@ -3,7 +3,7 @@
         <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> Create Student</h3>
     </div>
     <div class="panel-body">
-        <form class="" name="create_student" role="form" action="system/createStudent" method="post">
+        <form class="" name="create_student" role="form" action="/admin/system/createStudent" method="post">
             {{ csrf_field() }}
             <div class="form-group">
               <label for="student_name">Student Name</label>
@@ -14,11 +14,6 @@
               <label for="student_email">Email Address</label>
               <input type="text" name="student_email" class="form-control" id="student_email" placeholder="email address">
               <p class="help-block">Enter student email address. This will be used as the username.</p>
-            </div>
-
-            <div class="form-group">
-              <label for="student_phone">Phone Number</label>
-              <input type="text" name="student_phone" class="form-control" id="student_phone" placeholder="phone number">
             </div>
             <div class="form-group">
                 <div class="row">

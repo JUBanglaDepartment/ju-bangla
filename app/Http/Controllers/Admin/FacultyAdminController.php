@@ -4,6 +4,10 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 
+use App\Models\Faculty;
+use App\Models\Student;
+use App\Models\Course;
+
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
@@ -16,7 +20,8 @@ class FacultyAdminController extends Controller
      */
     public function index()
     {
-        return view('admin.faculty.home');
+        $students = Student::all();
+        return view('admin.faculty.home', ['students' => $students]);
     }
 
     /**
@@ -27,6 +32,17 @@ class FacultyAdminController extends Controller
     public function create()
     {
         //
+    }
+
+    /**
+     * Udate or add student marks in database.
+     *
+     * @param  Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function addMarks(Request $request)
+    {
+        return $request->all();
     }
 
     /**
@@ -84,4 +100,6 @@ class FacultyAdminController extends Controller
     {
         //
     }
+
+
 }

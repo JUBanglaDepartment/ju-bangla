@@ -3,7 +3,7 @@
         <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> Create Faculty</h3>
     </div>
     <div class="panel-body">
-        <form class="" role="form" name="create_faculty" action="system/createFaculty" method="post">
+        <form class="" role="form" name="create_faculty" action="admin/system/createFaculty" method="post">
             {{ csrf_field() }}
             <div class="form-group">
               <label for="faculty_name">Faculty Name</label>

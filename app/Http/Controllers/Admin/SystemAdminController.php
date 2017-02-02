@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 
 use App\Models\Faculty;
-use App\Models\student;
+use App\Models\Student;
 use App\Models\Course;
 
 use Illuminate\Http\Request;
@@ -36,7 +36,7 @@ class SystemAdminController extends Controller
         $faculty->email = $request->faculty_email;
         $faculty->phone = $request->faculty_phone;
         $faculty->save();
-        echo $faculty_name;
+        echo $faculty->name;
     }
 
     /**
@@ -50,9 +50,8 @@ class SystemAdminController extends Controller
         $student = new Student();
         $student->name = $request->student_name;
         $student->email = $request->student_email;
-        $student->phone = $request->student_phone;
         $student->save();
-        echo $student_name;
+        echo $student->name;
     }
 
     /**

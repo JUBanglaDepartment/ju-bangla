@@ -118,23 +118,40 @@
                             <table class="table table-bordered table-hover">
                                 <thead>
                                     <tr>
-                                        <th>Student Roll</th>
-                                        <th>Student Name</th>
-                                        <th>Attendance</th>
-                                        <th>Tutorial</th>
-                                        <th>Course FInal</th>
+                                        <th rowspan="2">Roll No</th>
+                                        <th rowspan="2">Name</th>
+                                        <th colspan="6">Tutorial Exam</th>
+                                        <th colspan="3">Attendance</th>
                                         <th>Total</th>
+                                    </tr>
+                                    <tr>
+                                        <th>1st</th>
+                                        <th>2nd</th>
+                                        <th>3rd</th>
+                                        <th>4th</th>
+                                        <th>5th</th>
+                                        <th>Average</th>
+                                        <th>Count</th>
+                                        <th>Percentage</th>
+                                        <th>Score</th>
+                                        <th>Score Received</th>
                                     </tr>
                                 </thead>
                                 @foreach ($students as $student)
                                     <tbody>
                                         <tr>
-                                            <td>{{$student->classroll}}</td>
+                                            <td>{{$student->id}}</td>
                                             <td>{{$student->name}}</td>
-                                            <td><input type="text" value="0" name="{{$student->id}}_atendance"></td>
-                                            <td><input type="text" value="0" name="{{$student->id}}_tutorial"></td>
-                                            <td><input type="text" value="0" name="{{$student->id}}_course_final"></td>
-                                            <td><input type="text" value="0" name="{{$student->id}}_total"></td>
+                                            <td><input type="number" value="0" name="{{$student->id}}_tut_1"></td>
+                                            <td><input type="number" value="0" name="{{$student->id}}_tut_2"></td>
+                                            <td><input type="number" value="0" name="{{$student->id}}_tut_3"></td>
+                                            <td><input type="number" value="0" name="{{$student->id}}_tut_4"></td>
+                                            <td><input type="number" value="0" name="{{$student->id}}_tut_5"></td>
+                                            <td><input type="number" value="0" name="{{$student->id}}_tut_avg"></td>
+                                            <td><input type="number" value="0" name="{{$student->id}}_tut_count"></td>
+                                            <td><input type="number" value="0" name="{{$student->id}}_tut_percent"></td>
+                                            <td><input type="number" value="0" name="{{$student->id}}_tut_score"></td>
+                                            <td><input type="number" value="0" name="{{$student->id}}_tut_total"></td>
                                         </tr>
                                     </tbody>
                                 @endforeach
@@ -160,7 +177,5 @@
             </div>
         </div>
     </div>
-    <!--
-
--->
+    <!-- /.row -->
 @endsection
