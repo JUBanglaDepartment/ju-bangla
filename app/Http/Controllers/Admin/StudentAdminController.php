@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 
+use App\Models\Student;
+use App\Models\Course;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
@@ -16,7 +18,9 @@ class StudentAdminController extends Controller
      */
     public function index()
     {
-        return view('admin.student.home');
+        $students = Student::all();
+        return view('admin.student.home',
+                ['students' => $students]);
     }
 
     /**

@@ -19,13 +19,29 @@
         </div>
     </div>
     <!-- /.row -->
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="alert alert-info alert-dismissable">
-                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                <i class="fa fa-info-circle"></i>  <strong>Like SB Admin?</strong> Try out <a href="http://startbootstrap.com/template-overviews/sb-admin-2" class="alert-link">SB Admin 2</a> for additional features!
-            </div>
-        </div>
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Course Code</th>
+                    <th>Course Name</th>
+                    <th>Bengali Name</th>
+                    <th>Objective</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            @foreach ($courses as $course)
+                <tbody>
+                    <tr>
+                        <td>{{$course->code}}</td>
+                        <td>{{$course->name}}</td>
+                        <td>{{$course->bengali_name}}</td>
+                        <td>{{$course->objective}}</td>
+                        <td>{{$course->description}}</td>
+                    </tr>
+                </tbody>
+            @endforeach
+        </table>
     </div>
     <!-- /.row -->
 @endsection

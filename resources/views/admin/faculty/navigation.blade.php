@@ -5,13 +5,13 @@
         <a href="/admin"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
     </li>
     <li>
-        <a href="/admin/faculty"><i class="fa fa-fw fa-bar-chart-o"></i> Faculty</a>
+        <a href="/admin/faculty"><i class="fa fa-fw fa-graduation-cap"></i> Faculty</a>
     </li>
     <li>
-        <a href="/admin/student"><i class="fa fa-fw fa-table"></i> Students</a>
+        <a href="/admin/student"><i class="fa fa-fw fa-group"></i> Students</a>
     </li>
     <li>
-        <a href="/admin/course"><i class="fa fa-fw fa-edit"></i> Courses</a>
+        <a href="/admin/course"><i class="fa fa-fw fa-book"></i> Courses</a>
     </li>
     <li>
         <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>

@@ -17,6 +17,7 @@ class CreateStudentsTable extends Migration
             $table->string('name',20);
             $table->string('year',4)->default('2017');
             $table->string('email',50)->unique();
+            $table->string('password',512);
             $table->string('registrationid',5)->default('00000');
             $table->string('classroll',4)->default('0000');
             $table->string('hall',2)->default('00');

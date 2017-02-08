@@ -15,7 +15,9 @@ class CourseAdminController extends Controller
      */
     public function index()
     {
-        return view('admin.course.home');
+        $courses = Course::all();
+        return view('admin.course.home',
+                ['courses' => $courses]);
     }
 
     /**
