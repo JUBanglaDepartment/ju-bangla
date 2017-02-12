@@ -24,7 +24,7 @@ class CoursesTableSeeder extends Seeder
         'bengali_name' => str_random(15),
         'objective' => str_random(20),
         'description' => str_random(50),
-        'code' => mt_rand(100,900),
+        'code' => mt_rand(100,999),
         'created_at' => new DateTime,
         'updated_at' => new DateTime]);
 
