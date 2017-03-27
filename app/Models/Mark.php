@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 use SoftDeletes;
 
 
-class Course extends Model
+class Mark extends Model
 {
-    protected $table = 'courses';
+    protected $table = 'marks';
 }
